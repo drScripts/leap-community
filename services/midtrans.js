@@ -36,7 +36,7 @@ const addTransaction = async (id, methodPayment, size, user) => {
     },
     enabled_payments: [methodPayment],
     callbacks: {
-      finish: "http://localhost:3000/success",
+      finish: "https://leap-community.herokuapp.com/success",
     },
   };
 
