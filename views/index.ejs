@@ -1,0 +1,323 @@
+<%- include("./templates/header.ejs") %> <%- include("./templates/navbar.ejs")
+%>
+<!-- Header -->
+<section class="header pt-lg-60 pb-50">
+  <div class="container-xxl container-fluid">
+    <div class="row gap-lg-0 gap-5">
+      <div class="col-lg-6 col-12 my-auto" data-aos="slide-right">
+        <p class="text-support text-lg color-palette-2">Halo visitors,</p>
+        <h1 class="header-title color-palette-1 fw-bold">
+          Let us <span class="d-sm-inline d-none">introduce</span
+          ><span class="d-sm-none d-inline">a </span
+          ><span class="underline-blue"> New</span>
+          <br class="d-sm-block d-none" />
+          <span class="underline-blue">Best Community</span> in Socials
+        </h1>
+        <p class="mt-30 mb-40 text-lg color-palette-1">
+          Kami merupakan sebuah komunitas yang membantu<br
+            class="d-md-block d-none"
+          />
+          para mahasiswa dalam menentukan masa depannya.
+        </p>
+        <div class="d-flex flex-lg-row flex-column gap-4">
+          <a
+            class="btn-learn text-lg color-palette-1 my-auto text-center"
+            href="#"
+            role="button"
+            >Learn More</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 d-lg-block d-none">
+        <div
+          class="d-flex justify-content-lg-end justify-content-center me-lg-5"
+        >
+          <img
+            src="/assets/img/LeapCommunity.jpg"
+            alt=""
+            class="header-hero"
+            data-aos="fade-up"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 Column - Featured-Product -->
+<section class="featured-game pt-50 pb-50" id="product">
+  <div class="container-fluid">
+    <h2 class="text-4xl fw-bold color-palette-1 mb-30">
+      Our Featured<br />
+      Merchant this year
+    </h2>
+    <div
+      class="d-flex flex-row flex-lg-wrap overflow-setting justify-content-lg-center gap-lg-3 gap-4"
+      data-aos="fade-up"
+    >
+      <% products.forEach(element => { %>
+      <div class="featured-game-card position-relative">
+        <a href="/product/<%= element._id %>">
+          <div class="blur-sharp">
+            <img src="<%= element.image %>" width="205" height="270" alt="" />
+          </div>
+          <div class="cover position-absolute bottom-0 m-32">
+            <div
+              class="d-flex flex-column h-100 justify-content-between text-decoration-none"
+            >
+              <div class="game-icon mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="90"
+                  height="90"
+                  viewBox="0 0 256 256"
+                  xml:space="preserve"
+                >
+                  <desc>Created with Fabric.js 1.7.22</desc>
+                  <defs></defs>
+                  <g transform="translate(128 128) scale(2.84 2.84)">
+                    <g
+                      style="
+                        stroke: none;
+                        stroke-width: 0;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill: none;
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform="translate(-44.55 -44.55) scale(0.99 0.99)"
+                    >
+                      <path
+                        d="M 20.936 31.857 H 1 c -0.552 0 -1 -0.448 -1 -1 c 0 -0.552 0.448 -1 1 -1 h 19.936 c 0.552 0 1 0.448 1 1 C 21.936 31.409 21.488 31.857 20.936 31.857 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M 21.972 40.095 H 2.037 c -0.552 0 -1 -0.448 -1 -1 c 0 -0.552 0.448 -1 1 -1 h 19.936 c 0.552 0 1 0.448 1 1 C 22.972 39.647 22.524 40.095 21.972 40.095 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M 23.228 48.333 H 3.292 c -0.552 0 -1 -0.447 -1 -1 c 0 -0.553 0.448 -1 1 -1 h 19.936 c 0.552 0 1 0.447 1 1 C 24.228 47.885 23.78 48.333 23.228 48.333 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M 36.595 48.02 h 44.528 c 1.86 0 3.499 -1.224 4.026 -3.008 l 4.738 -16.027 c 0.513 -1.737 -0.788 -3.479 -2.599 -3.479 H 30.749 L 36.595 48.02 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M 81.552 58.405 H 38.974 c -0.557 0 -1.044 -0.377 -1.184 -0.916 L 28.683 22.42 c -0.341 -1.314 -1.527 -2.231 -2.885 -2.231 h -7.575 c -0.676 0 -1.223 -0.548 -1.223 -1.223 s 0.548 -1.223 1.223 -1.223 h 7.575 c 2.472 0 4.632 1.671 5.253 4.063 l 8.869 34.153 h 41.632 c 0.675 0 1.223 0.548 1.223 1.223 S 82.228 58.405 81.552 58.405 z"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform=" matrix(1 0 0 1 0 0) "
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="46.342"
+                        cy="66.952"
+                        r="5.302"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                      <circle
+                        cx="73.09200000000001"
+                        cy="66.952"
+                        r="5.302"
+                        style="
+                          stroke: none;
+                          stroke-width: 1;
+                          stroke-dasharray: none;
+                          stroke-linecap: butt;
+                          stroke-linejoin: miter;
+                          stroke-miterlimit: 10;
+                          fill: rgb(255, 255, 255);
+                          fill-rule: nonzero;
+                          opacity: 1;
+                        "
+                        transform="  matrix(1 0 0 1 0 0) "
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p class="fw-semibold text-white text-xl m-0">Leap Community</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<!-- Reached -->
+<section class="reached pt-50 pb-50">
+  <div class="container-fluid">
+    <div
+      class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-lg-0 gap-4"
+    >
+      <div class="me-lg-35">
+        <p
+          class="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
+        >
+          290M+
+        </p>
+        <p class="text-lg text-lg-start text-center color-palette-2 m-0">
+          Merchant
+        </p>
+      </div>
+      <div class="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none"></div>
+      <div
+        class="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block"
+      ></div>
+      <div class="me-lg-35 ms-lg-35">
+        <p
+          class="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
+        >
+          12.500
+        </p>
+        <p class="text-lg text-lg-start text-center color-palette-2 m-0">
+          Persons
+        </p>
+      </div>
+      <div
+        class="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block"
+      ></div>
+      <div class="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none"></div>
+      <div class="me-lg-35 ms-lg-35">
+        <p
+          class="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
+        >
+          99,9%
+        </p>
+        <p class="text-lg text-lg-start text-center color-palette-2 m-0">
+          Happy Peoples
+        </p>
+      </div>
+      <div
+        class="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block"
+      ></div>
+      <div class="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none"></div>
+      <div class="me-lg-35 ms-lg-35">
+        <p
+          class="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
+        >
+          4.7
+        </p>
+        <p class="text-lg text-lg-start text-center color-palette-2 m-0">
+          Rating Worldwide
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="story pt-50 pb-50" id="about">
+  <div class="container-xxl container-fluid">
+    <div class="row align-items-center px-lg-5 mx-auto gap-lg-0 gap-4">
+      <div
+        class="col-lg-6 col-12 d-lg-flex d-none justify-content-lg-end pe-lg-60"
+        data-aos="zoom-in"
+      >
+        <img
+          src="./assets/img/494185.jpg"
+          width="612"
+          height="452"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-6 col-12 ps-lg-60">
+        <div class="">
+          <h2 class="text-4xl fw-bold color-palette-1 mb-30">
+            About Our Community
+          </h2>
+          <p class="text-lg color-palette-1 mb-30">
+            leap merupakan sebutan dari Leading for Empowering Able People, kami
+            membuat leap community ini untuk membangun sebuah komunitas yang
+            mengarah kepada lingkungan mahasiswa yang binggung untuk menentukan
+            masa depan mereka, sehingga disini kami membuka sebuah komunitas
+            untuk membawa mereka lebih reach full potency dan mau lebih
+            Empowering (memberdayakan) orang - orang
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("./templates/footer.ejs") %> <%- include("./templates/footers.ejs")
+%>

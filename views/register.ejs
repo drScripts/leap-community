@@ -1,0 +1,113 @@
+<%- include("./templates/header.ejs") %>
+
+<!-- Sign Up -->
+<section class="sign-up mx-auto pt-lg-100 pb-lg-100 pt-30 pb-47">
+  <div class="container mx-auto">
+    <form action="/register" method="post">
+      <div class="pb-50">
+        <a class="navbar-brand" href="/">
+          <img src="/assets/img/logo.jpg" width="90" height="100" alt="" />
+        </a>
+      </div>
+      <h2 class="text-4xl fw-bold color-palette-1 mb-10">Sign Up</h2>
+      <p class="text-lg color-palette-1 m-0">
+        Daftar dan bergabung dengan komunitas kami
+      </p>
+      <div class="pt-50">
+        <label
+          for="name"
+          class="form-label text-lg fw-medium color-palette-1 mb-10"
+          >Full Name</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-pill text-lg"
+          id="name"
+          name="name"
+          aria-describedby="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="pt-30">
+        <label
+          for="email"
+          class="form-label text-lg fw-medium color-palette-1 mb-10"
+          >Email Address</label
+        >
+        <input
+          type="email"
+          class="form-control rounded-pill text-lg"
+          id="email"
+          name="email"
+          aria-describedby="email"
+          placeholder="Enter your email address"
+          required
+        />
+      </div>
+      <div class="pt-30">
+        <label
+          for="password"
+          class="form-label text-lg fw-medium color-palette-1 mb-10"
+          >Password</label
+        >
+        <input
+          type="password"
+          class="form-control rounded-pill text-lg"
+          id="password"
+          name="password"
+          aria-describedby="password"
+          placeholder="Your password"
+          required
+        />
+      </div>
+      <div class="pt-30">
+        <label
+          for="phoneNumber"
+          class="form-label text-lg fw-medium color-palette-1 mb-10"
+          >Phone Number</label
+        >
+        <input
+          type="number"
+          class="form-control rounded-pill text-lg"
+          id="phoneNumber"
+          name="phoneNumber"
+          aria-describedby="Phone Number"
+          placeholder="Your Phone Number"
+          required
+        />
+      </div>
+      <div class="pt-30">
+        <label
+          for="address"
+          class="form-label text-lg fw-medium color-palette-1 mb-10"
+          >Address</label
+        >
+        <textarea
+          class="form-control rounded text-lg p-2"
+          id="address"
+          name="address"
+          aria-describedby="Address"
+          placeholder="Your Address"
+          required
+        ></textarea>
+      </div>
+      <div class="button-group d-flex flex-column mx-auto pt-50">
+        <button
+          type="submit"
+          class="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
+          role="button"
+        >
+          Continue
+        </button>
+        <a
+          class="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill"
+          href="/login"
+          role="button"
+          >Sign In</a
+        >
+      </div>
+    </form>
+  </div>
+</section>
+<%- include("./templates/footers.ejs") %>

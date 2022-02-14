@@ -1,0 +1,92 @@
+<%- include("./templates/header.ejs") %>
+
+<!-- Sign In -->
+<section class="sign-in mx-auto">
+  <div class="row">
+    <div
+      class="col-xxl-5 col-lg-6 my-auto py-lg-0 pt-lg-50 pb-lg-50 pt-30 pb-47 px-0"
+    >
+      <form action="/login" method="post">
+        <div class="container mx-auto">
+          <div class="pb-50">
+            <a class="navbar-brand" href="/">
+              <img src="/assets/img/logo.jpg" width="90" height="100" alt="" />
+            </a>
+          </div>
+          <h2 class="text-4xl fw-bold color-palette-1 mb-10">Sign In</h2>
+          <p class="text-lg color-palette-1 m-0">
+            Masuk untuk melakukan proses transaksi
+          </p>
+          <div class="pt-50">
+            <label
+              for="email"
+              class="form-label text-lg fw-medium color-palette-1 mb-10"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              class="form-control rounded-pill text-lg"
+              id="email"
+              name="email"
+              aria-describedby="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div class="pt-30">
+            <label
+              for="password"
+              class="form-label text-lg fw-medium color-palette-1 mb-10"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control rounded-pill text-lg"
+              id="password"
+              name="password"
+              aria-describedby="password"
+              placeholder="Your password"
+              required
+            />
+          </div>
+          <div class="button-group d-flex flex-column mx-auto pt-50">
+            <button
+              type="submit"
+              class="btn btn-sign-in fw-medium text-lg text-white rounded-pill mb-16"
+              role="button"
+            >
+              Continue to Sign In
+            </button>
+            <a
+              class="btn btn-sign-up fw-medium text-lg color-palette-1 rounded-pill"
+              href="/register"
+              role="button"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="col-xxl-7 col-lg-6 bg-blue text-center pt-lg-145 pb-lg-145 d-lg-block d-none"
+    >
+      <img
+        src="/assets/img/LeapCommunity.jpg"
+        width="502"
+        height="391.21"
+        class="img-fluid pb-50 rounded"
+      />
+      <h2 class="text-4xl fw-bold text-white mb-30">
+        Growing a successful
+        <br />
+        young generation.
+      </h2>
+      <p class="text-white m-0">
+        Kami membangun sekelompok orang<br />
+        yang memiliki minat yang sama<br />
+        dan saling berkaitan satu sama lain,
+      </p>
+    </div>
+  </div>
+</section>
+<%- include("./templates/footers.ejs") %>

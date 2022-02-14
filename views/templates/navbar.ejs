@@ -1,0 +1,49 @@
+<!-- Navbar -->
+<section>
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/logo.jpg" width="90" height="100" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
+          <li class="nav-item my-auto">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="/#product">Product</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="/#about">About us</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="/#footer">Contact</a>
+          </li>
+          <% if(!user){ %>
+          <li class="nav-item my-auto">
+            <a
+              class="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
+              href="/login"
+              role="button"
+              >Sign In</a
+            >
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
